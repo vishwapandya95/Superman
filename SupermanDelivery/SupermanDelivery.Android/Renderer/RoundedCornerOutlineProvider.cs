@@ -1,9 +1,9 @@
 ﻿using System;
 using Android.Graphics;
 using Android.Views;
-using DeliveryApp.Droid.Renderer;
-using DeliveryApp.Renderer;
-namespace DeliveryApp.Droid.Renderer
+using SupermanDelivery.Droid.Renderer;
+using SupermanDelivery.Renderer;
+namespace SupermanDelivery.Droid.Renderer
 {
     public class RoundedCornerOutlineProvider : ViewOutlineProvider
     {

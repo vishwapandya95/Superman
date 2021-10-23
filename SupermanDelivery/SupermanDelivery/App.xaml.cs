@@ -13,8 +13,8 @@ namespace SupermanDelivery
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+           // DependencyService.Register<MockDataStore>();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

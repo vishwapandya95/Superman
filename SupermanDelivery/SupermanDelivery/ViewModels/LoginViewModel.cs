@@ -1,4 +1,6 @@
-﻿using SupermanDelivery.Views;
+﻿using Rg.Plugins.Popup.Extensions;
+using SupermanDelivery.Views;
+using SupermanDelivery.Views.Popup;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,15 +12,16 @@ namespace SupermanDelivery.ViewModels
     {
         public Command LoginCommand { get; }
 
-        public LoginViewModel()
+        public LoginViewModel(ContentPage view)
         {
+            m_view = view;
             LoginCommand = new Command(OnLoginClicked);
         }
 
         private async void OnLoginClicked(object obj)
         {
-            // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+            var popup = new LanguagePopup();
+            await m_view.Navigation.PushPopupAsync(popup);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 using Android.Graphics;
-namespace DeliveryApp.Droid.Renderer
+namespace SupermanDelivery.Droid.Renderer
 {
     public static class ShapeUtils
     {

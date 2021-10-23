@@ -1,11 +1,11 @@
 ﻿using Android.Content;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-using DeliveryApp.Droid.Renderer;
-using DeliveryApp.Renderer;
+using SupermanDelivery.Droid.Renderer;
+using SupermanDelivery.Renderer;
 
 [assembly: ExportRenderer(typeof(BorderlessEntry), typeof(BorderlessBorderlessEntryRenderer))]
-namespace DeliveryApp.Droid.Renderer
+namespace SupermanDelivery.Droid.Renderer
 {
     public class BorderlessBorderlessEntryRenderer : EntryRenderer
     {

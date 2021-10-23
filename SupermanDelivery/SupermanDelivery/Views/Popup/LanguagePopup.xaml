@@ -1,12 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SupermanDelivery.Views.Popup.LanguagePopup">
+<pages:PopupPage
+    x:Class="SupermanDelivery.Views.Popup.LanguagePopup"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    x:Name="UserPopup">
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+            DurationIn="50"
+            EasingIn="BounceOut"
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1"
+            ScaleOut="0.7" />
+    </pages:PopupPage.Animation>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame BackgroundColor="{x:StaticResource PrimaryAxisPink}" CornerRadius="{x:OnPlatform Android='0,10,10,0', iOS='0,10,10,0'}">
+                <Label
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Select your app language"
+                    TextColor="White"
+                    VerticalOptions="CenterAndExpand" />
+            </Frame>
+
+            <ListView
+                x:Name="Languagelist"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding .}" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</pages:PopupPage>

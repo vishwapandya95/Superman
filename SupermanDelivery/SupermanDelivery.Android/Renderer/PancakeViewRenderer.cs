@@ -9,13 +9,14 @@ using Android.Support.V4.View;
 using Xamarin.Forms;
 using ACanvas = Android.Graphics.Canvas;
 using Xamarin.Forms.Platform.Android;
-using DeliveryApp.Styles;
-using DeliveryApp.Droid.Renderer;
-using DeliveryApp.Renderer;
+using SupermanDelivery.Styles;
+using SupermanDelivery.Droid.Renderer;
+using SupermanDelivery.Renderer;
+
 
 [assembly: ExportRenderer(typeof(PancakeView), typeof(PancakeViewRenderer))]
 
-namespace DeliveryApp.Droid.Renderer
+namespace SupermanDelivery.Droid.Renderer
 {
     public class PancakeViewRenderer : VisualElementRenderer<ContentView>
     {

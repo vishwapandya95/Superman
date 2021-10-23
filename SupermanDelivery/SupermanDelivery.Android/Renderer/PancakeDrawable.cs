@@ -7,10 +7,10 @@ using System.Linq;
 using Xamarin.Forms;
 using ACanvas = Android.Graphics.Canvas;
 using Xamarin.Forms.Platform.Android;
-using DeliveryApp.Droid.Renderer;
-using DeliveryApp.Renderer;
+using SupermanDelivery.Droid.Renderer;
+using SupermanDelivery.Renderer;
 
-namespace DeliveryApp.Droid.Renderer
+namespace SupermanDelivery.Droid.Renderer
 {
     public class PancakeDrawable : Drawable
     {
