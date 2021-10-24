@@ -21,7 +21,8 @@ QuickStart Guide
 
 Learn more of the fundamentals for building apps with Xamarin here: https://aka.ms/xamarin-quickstart
 
-Your App Shell
+Your App 
+
 --------------
 
 This template uses Shell, an app container that reduces the complexity of your apps by providing fundamental features including:

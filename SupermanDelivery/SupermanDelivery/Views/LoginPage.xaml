@@ -6,15 +6,38 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Shell.NavBarIsVisible="False"
-    mc:Ignorable="d">
-    <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Entry Placeholder="Mobile Number" Visual="Material" />
-            <Button
-                x:Name="login"
-                Command="{Binding LoginCommand}"
-                Text="Login"
-                VerticalOptions="Center" />
-        </StackLayout>
+    NavigationPage.HasNavigationBar="False"
+    mc:Ignorable="d"
+    BackgroundColor="White">
+    <ContentPage.Content  >
+        <Grid Margin="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Source="superman" HeightRequest="200"/>
+            <Entry Grid.Row="1" Placeholder="Mobile number" Visual="Material" TextColor="{x:StaticResource PrimaryGrey}"  BackgroundColor="{x:StaticResource PrimaryWhite}" Margin="10,30,10,25" />
+            <Button Grid.Row="2" Text="LOGIN" HeightRequest="46"   BackgroundColor="{x:StaticResource PrimaryAxisPink}"  TextColor="{x:StaticResource PrimaryWhite}" CornerRadius="25" FontSize="Medium" />
+
+            <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="Center" Margin="30" >
+                <Label Text="By logging in you are agreeing to our" TextColor="{x:StaticResource PrimaryGrey}" HorizontalOptions="Center"/>
+                <Label HorizontalOptions="Center">
+                    <Label.FormattedText >
+                        <FormattedString >
+                            <FormattedString.Spans>
+                                <Span Text="Terms and conditions" TextColor="{x:StaticResource PrimaryAxisPink}" FontAttributes="Bold"/>
+                                <Span Text=" and " TextColor="{x:StaticResource PrimaryGrey}"/>
+                                <Span Text="Privacy Policy." TextColor="{x:StaticResource PrimaryAxisPink}" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+            </StackLayout>
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
