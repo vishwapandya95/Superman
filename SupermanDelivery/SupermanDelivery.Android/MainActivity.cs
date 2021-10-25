@@ -19,6 +19,7 @@ namespace SupermanDelivery.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             //UserDialogs.Init(this);
+            Rg.Plugins.Popup.Popup.Init(this);
             global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

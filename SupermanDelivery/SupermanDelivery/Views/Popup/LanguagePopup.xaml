@@ -16,27 +16,47 @@
             ScaleOut="0.7" />
     </pages:PopupPage.Animation>
     <ContentPage.Content>
-        <StackLayout>
-            <Frame BackgroundColor="{x:StaticResource PrimaryAxisPink}" CornerRadius="{x:OnPlatform Android='0,10,10,0', iOS='0,10,10,0'}">
-                <Label
-                    HorizontalOptions="CenterAndExpand"
-                    Text="Select your app language"
-                    TextColor="White"
-                    VerticalOptions="CenterAndExpand" />
-            </Frame>
+        <StackLayout
+            Margin="15"
+            HeightRequest="250"
+            HorizontalOptions="EndAndExpand"
+            Spacing="0"
+            VerticalOptions="CenterAndExpand">
+            <Frame
+                Margin="0"
+                Padding="0"
+                CornerRadius="10">
+                <StackLayout>
+                    <Frame BackgroundColor="{x:StaticResource PrimaryAxisPink}">
+                        <Label
+                            FontSize="Medium"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="Select your app language"
+                            TextColor="White"
+                            VerticalOptions="CenterAndExpand" />
+                    </Frame>
 
-            <ListView
-                x:Name="Languagelist"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Label Text="{Binding .}" />
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                    <ListView
+                        x:Name="Languagelist"
+                        BackgroundColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        SeparatorColor="LightGray"
+                        VerticalOptions="FillAndExpand">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Label
+                                        Margin="15,0,0,0"
+                                        BackgroundColor="White"
+                                        Text="{Binding .}"
+                                        TextColor="DarkGray"
+                                        VerticalOptions="Center" />
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </pages:PopupPage>
