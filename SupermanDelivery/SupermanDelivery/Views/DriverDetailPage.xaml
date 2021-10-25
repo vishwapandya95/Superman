@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SupermanDelivery.Views.DriverDetailPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    NavigationPage.HasNavigationBar="False"
+    mc:Ignorable="d"
+    BackgroundColor="{x:StaticResource PrimaryWhite}">
+    <ContentPage.Content>
+        <Grid Margin="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Source="superman" HeightRequest="200"/>
+            <StackLayout Grid.Row="1" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Label Text="Welcome to Porter!" HorizontalOptions="Center" TextColor="{x:StaticResource PrimaryGrey}" FontSize="Medium" FontAttributes="Bold"></Label>
+                <Label Text="Please fill below details to start earning" HorizontalOptions="Center" TextColor="{x:StaticResource PrimaryGrey}"></Label>
+            </StackLayout>
+            <Entry Grid.Row="2" Placeholder="Owner's Number" Visual="Material" TextColor="{x:StaticResource PrimaryGrey}" BackgroundColor="{x:StaticResource PrimaryWhite}" Margin="0,30,0,0"  />
+            <Entry Grid.Row="3" Placeholder="Driver's Number" Visual="Material" TextColor="{x:StaticResource PrimaryGrey}"  BackgroundColor="{x:StaticResource PrimaryWhite}"  />
+            <Entry Grid.Row="4" Placeholder="Owner's Name" Visual="Material" TextColor="{x:StaticResource PrimaryGrey}"  BackgroundColor="{x:StaticResource PrimaryWhite}"  />
+
+            <Picker Grid.Row="5" Visual="Material" x:Name="City" TextColor="{x:StaticResource PrimaryGrey}" Title="City"  BackgroundColor="{x:StaticResource PrimaryWhite}" >
+                <Picker.Items>
+                    <x:String>Ahmedabad</x:String>
+                    <x:String>Gandhinagar</x:String>
+                    <x:String>Mehsana</x:String>
+                    <x:String>Rajkot</x:String>
+                    <x:String>Surat</x:String>
+
+                </Picker.Items>
+            </Picker>
+            <Picker Grid.Row="6" Visual="Material" x:Name="VehicleType" TextColor="{x:StaticResource PrimaryGrey}" Title="Vehicle Type"  BackgroundColor="{x:StaticResource PrimaryWhite}" >
+                <Picker.Items>
+                    <x:String>Tata Ace</x:String>
+                    <x:String>Pickup / 8ft</x:String>
+                    <x:String>3 Wheeler</x:String>
+                    <x:String>2 Wheeler</x:String>
+                    <x:String>Others</x:String>
+
+                </Picker.Items>
+            </Picker>
+            <!--<Entry  Placeholder="City" Visual="Material" TextColor="{x:StaticResource PrimaryGrey}"  BackgroundColor="{x:StaticResource PrimaryWhite}"  />-->
+            <!--<Entry Grid.Row="6" Placeholder="Vehicle Type" Visual="Material" TextColor="{x:StaticResource PrimaryGrey}"  BackgroundColor="{x:StaticResource PrimaryWhite}"  />-->
+            <Button Grid.Row="7" Text="PROCEED" HeightRequest="46" VerticalOptions="End"  BackgroundColor="{x:StaticResource PrimaryAxisPink}" TextColor="White" CornerRadius="25" FontSize="Medium" />
+            
+            
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
