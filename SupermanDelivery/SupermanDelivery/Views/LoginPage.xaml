@@ -5,32 +5,62 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Shell.NavBarIsVisible="False"
+    BackgroundColor="White"
     NavigationPage.HasNavigationBar="False"
-    mc:Ignorable="d"
-    BackgroundColor="White">
-    <ContentPage.Content  >
+    Shell.NavBarIsVisible="False"
+    mc:Ignorable="d">
+    <ContentPage.Content>
         <Grid Margin="15">
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Image Grid.Row="0" Source="superman" HeightRequest="200"/>
-            <Entry Grid.Row="1" Placeholder="Mobile number" Visual="Material" TextColor="{x:StaticResource PrimaryGrey}"  BackgroundColor="{x:StaticResource PrimaryWhite}" Margin="10,30,10,25" />
-            <Button Grid.Row="2" Text="LOGIN" HeightRequest="46"   BackgroundColor="{x:StaticResource PrimaryAxisPink}"  TextColor="{x:StaticResource PrimaryWhite}" CornerRadius="25" FontSize="Medium" />
+            <Image
+                Grid.Row="0"
+                HeightRequest="200"
+                Source="superman" />
+            <Entry
+                Grid.Row="1"
+                Margin="10,30,10,25"
+                BackgroundColor="{x:StaticResource PrimaryWhite}"
+                Placeholder="Mobile number"
+                TextColor="{x:StaticResource PrimaryGrey}"
+                Visual="Material" />
+            <Button
+                Grid.Row="2"
+                BackgroundColor="{x:StaticResource PrimaryAxisPink}"
+                Command="{Binding LoginCommand}"
+                CornerRadius="25"
+                FontSize="Medium"
+                HeightRequest="46"
+                Text="LOGIN"
+                TextColor="{x:StaticResource PrimaryWhite}" />
 
-            <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="Center" Margin="30" >
-                <Label Text="By logging in you are agreeing to our" TextColor="{x:StaticResource PrimaryGrey}" HorizontalOptions="Center"/>
+            <StackLayout
+                Grid.Row="3"
+                Margin="30"
+                HorizontalOptions="Center"
+                Orientation="Vertical">
+                <Label
+                    HorizontalOptions="Center"
+                    Text="By logging in you are agreeing to our"
+                    TextColor="{x:StaticResource PrimaryGrey}" />
                 <Label HorizontalOptions="Center">
-                    <Label.FormattedText >
-                        <FormattedString >
+                    <Label.FormattedText>
+                        <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Terms and conditions" TextColor="{x:StaticResource PrimaryAxisPink}" FontAttributes="Bold"/>
-                                <Span Text=" and " TextColor="{x:StaticResource PrimaryGrey}"/>
-                                <Span Text="Privacy Policy." TextColor="{x:StaticResource PrimaryAxisPink}" FontAttributes="Bold"/>
+                                <Span
+                                    FontAttributes="Bold"
+                                    Text="Terms and conditions"
+                                    TextColor="{x:StaticResource PrimaryAxisPink}" />
+                                <Span Text=" and " TextColor="{x:StaticResource PrimaryGrey}" />
+                                <Span
+                                    FontAttributes="Bold"
+                                    Text="Privacy Policy."
+                                    TextColor="{x:StaticResource PrimaryAxisPink}" />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
