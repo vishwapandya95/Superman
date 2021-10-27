@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="SupermanDelivery.Views.DashboardTabbedPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:local="clr-namespace:SupermanDelivery.Views"
+    android:TabbedPage.BarItemColor="#66FFFFFF"
+    android:TabbedPage.BarSelectedItemColor="White"
+    android:TabbedPage.IsSmoothScrollEnabled="True"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    BarBackgroundColor="{x:StaticResource PrimaryAxisPink}"
+    BarTextColor="White"
+    NavigationPage.HasNavigationBar="False">
+    <!--  Pages can be added as references or inline  -->
+    <NavigationPage
+        Title="Book Now"
+        IconImageSource="ic_book"
+        NavigationPage.HasNavigationBar="False">
+        <x:Arguments>
+            <local:BookNowPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Orders" IconImageSource="ic_order">
+        <x:Arguments>
+            <local:BookNowPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Payment" IconImageSource="ic_payment">
+        <x:Arguments>
+            <local:BookNowPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Account" IconImageSource="ic_account">
+        <x:Arguments>
+            <local:BookNowPage />
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

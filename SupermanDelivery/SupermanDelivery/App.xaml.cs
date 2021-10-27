@@ -13,13 +13,9 @@ namespace SupermanDelivery
         {
             InitializeComponent();
 
-           // DependencyService.Register<MockDataStore>();
-            MainPage = new NavigationPage(new LoginPage())
-            {
-                BarBackgroundColor = Color.FromHex("#98144D"),
-                //BarTextColor = Color.Black,
-
-            }; 
+            // DependencyService.Register<MockDataStore>();
+            MainPage = new NavigationPage(new DashboardTabbedPage());
+             
         }
 
         protected override void OnStart()
