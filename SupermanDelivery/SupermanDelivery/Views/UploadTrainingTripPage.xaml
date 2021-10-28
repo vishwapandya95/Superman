@@ -1,115 +1,259 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SupermanDelivery.Views.UploadTrainingTripPage"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             Shell.NavBarIsVisible="False"
-             mc:Ignorable="d"
-             BackgroundColor="{x:StaticResource PrimaryGrey}">
+<ContentPage
+    x:Class="SupermanDelivery.Views.UploadTrainingTripPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Welcome to Superman"
+    BackgroundColor="{x:StaticResource PrimaryGrey}"
+    mc:Ignorable="d">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+        <AbsoluteLayout
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            BackgroundColor="White">
             <!--#region FIRST FRAME HELP-->
 
-            <Frame Margin="0,8,0,10" Padding="10,15,10,15">
+            <!--<Frame Margin="0,8,0,10" Padding="10,15,10,15">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"></RowDefinition>
-                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="9*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="9*" />
+                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Row="0" Grid.Column="0" Text="Hi," TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"/>
-                    <Image Grid.Row="0" Grid.Column="1" Source="help" HeightRequest="25" HorizontalOptions="End"/>
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        FontAttributes="Bold"
+                        FontSize="Subtitle"
+                        Text="Hi,"
+                        TextColor="Black" />
+                    <Image
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        HeightRequest="25"
+                        HorizontalOptions="End"
+                        Source="help" />
 
-                    <Label Grid.Row="1" Grid.Column="0" Text="Let's start your journey" TextColor="Black" FontSize="Micro"/>
-                    <Label Grid.Row="1" Grid.Column="1" Text="Help" TextColor="Black" HorizontalOptions="End" FontSize="Micro"/>
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        FontSize="Micro"
+                        Text="Let's start"
+                        TextColor="Black" />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        FontSize="Micro"
+                        HorizontalOptions="End"
+                        Text="Help"
+                        TextColor="Black" />
                 </Grid>
-            </Frame>
+            </Frame>-->
             <!--#endregion-->
 
 
             <Grid Margin="15" RowSpacing="15">
-                <Grid.RowDefinitions >
-                    <RowDefinition Height="auto"></RowDefinition>
-                    <RowDefinition Height="auto"></RowDefinition>
-                    <RowDefinition Height="auto"></RowDefinition>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2*"></ColumnDefinition>
-                    <ColumnDefinition Width="8*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="8*" />
                 </Grid.ColumnDefinitions>
 
-                <!--#region UPLOAD DOCUMENT -->
-                <Frame Grid.Row="0" Grid.Column="0" Padding="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" CornerRadius="100" IsClippedToBounds="True"
-                    HeightRequest="70" WidthRequest="70" BackgroundColor="{x:StaticResource PrimaryAxisPink}">
+                <!--#region UPLOAD DOCUMENT-->
+                <Frame
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Padding="0"
+                    BackgroundColor="{x:StaticResource PrimaryAxisPink}"
+                    CornerRadius="100"
+                    HeightRequest="70"
+                    HorizontalOptions="CenterAndExpand"
+                    IsClippedToBounds="True"
+                    VerticalOptions="Center"
+                    WidthRequest="70">
 
-                    <Frame Padding="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" CornerRadius="100" IsClippedToBounds="True"
-                     HeightRequest="50" WidthRequest="50" BackgroundColor="{x:StaticResource PrimaryWhite}">
+                    <Frame
+                        Padding="0"
+                        BackgroundColor="{x:StaticResource PrimaryWhite}"
+                        CornerRadius="100"
+                        HeightRequest="50"
+                        HorizontalOptions="CenterAndExpand"
+                        IsClippedToBounds="True"
+                        VerticalOptions="Center"
+                        WidthRequest="50">
 
-                        <Label Text="1" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" Scale="2"/>
+                        <Label
+                            HorizontalOptions="Center"
+                            Scale="2"
+                            Text="1"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
 
                     </Frame>
                 </Frame>
                 <Frame Grid.Row="0" Grid.Column="1">
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                            <Label FontSize="Subtitle"  HorizontalOptions="StartAndExpand" Text="Upload documents" TextColor="black"/>
-                            <Label FontSize="Micro" HorizontalOptions="StartAndExpand" TextColor="Gray" Text="Driving licence, Aadhar card, etc."/>
+                    <StackLayout
+                        HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        VerticalOptions="FillAndExpand">
+                        <StackLayout
+                            HorizontalOptions="FillAndExpand"
+                            Orientation="Vertical"
+                            VerticalOptions="FillAndExpand">
+                            <Label
+                                FontSize="Subtitle"
+                                HorizontalOptions="StartAndExpand"
+                                Text="Upload documents"
+                                TextColor="black" />
+                            <Label
+                                FontSize="Micro"
+                                HorizontalOptions="StartAndExpand"
+                                Text="Driving licence, Aadhar card, etc."
+                                TextColor="Gray" />
                         </StackLayout>
-                        <Image HeightRequest="05" Source="side" WidthRequest="15" />
+                        <Image
+                            HeightRequest="05"
+                            Source="side"
+                            WidthRequest="15" />
                     </StackLayout>
                 </Frame>
                 <!--#endregion-->
 
-                <!--#region TRAINING -->
-                <Frame Grid.Row="1" Grid.Column="0" Padding="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" CornerRadius="100" IsClippedToBounds="True"
-                    HeightRequest="70" WidthRequest="70" BackgroundColor="{x:StaticResource PrimaryGrey}">
+                <!--#region TRAINING-->
+                <Frame
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Padding="0"
+                    BackgroundColor="{x:StaticResource PrimaryGrey}"
+                    CornerRadius="100"
+                    HeightRequest="70"
+                    HorizontalOptions="CenterAndExpand"
+                    IsClippedToBounds="True"
+                    VerticalOptions="Center"
+                    WidthRequest="70">
 
-                    <Frame Padding="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" CornerRadius="100" IsClippedToBounds="True"
-                     HeightRequest="50" WidthRequest="50" BackgroundColor="{x:StaticResource PrimaryWhite}">
+                    <Frame
+                        Padding="0"
+                        BackgroundColor="{x:StaticResource PrimaryWhite}"
+                        CornerRadius="100"
+                        HeightRequest="50"
+                        HorizontalOptions="CenterAndExpand"
+                        IsClippedToBounds="True"
+                        VerticalOptions="Center"
+                        WidthRequest="50">
 
-                        <Label Text="2" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" Scale="2"/>
+                        <Label
+                            HorizontalOptions="Center"
+                            Scale="2"
+                            Text="2"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
 
                     </Frame>
                 </Frame>
                 <Frame Grid.Row="1" Grid.Column="1">
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                            <Label FontSize="Subtitle"  HorizontalOptions="StartAndExpand" Text="Training" TextColor="black"/>
-                            <Label FontSize="Micro" HorizontalOptions="StartAndExpand" TextColor="Gray" Text="Get self trained on how to use the app"/>
+                    <StackLayout
+                        HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        VerticalOptions="FillAndExpand">
+                        <StackLayout
+                            HorizontalOptions="FillAndExpand"
+                            Orientation="Vertical"
+                            VerticalOptions="FillAndExpand">
+                            <Label
+                                FontSize="Subtitle"
+                                HorizontalOptions="StartAndExpand"
+                                Text="Training"
+                                TextColor="black" />
+                            <Label
+                                FontSize="Micro"
+                                HorizontalOptions="StartAndExpand"
+                                Text="Get self trained on how to use the app"
+                                TextColor="Gray" />
                         </StackLayout>
-                        <Image HeightRequest="05" Source="side" WidthRequest="15" />
+                        <Image
+                            HeightRequest="05"
+                            Source="side"
+                            WidthRequest="15" />
                     </StackLayout>
                 </Frame>
                 <!--#endregion-->
 
-                <!--#region FIRST TRIP -->
-                <Frame Grid.Row="2" Grid.Column="0" Padding="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" CornerRadius="100" IsClippedToBounds="True"
-                    HeightRequest="70" WidthRequest="70" BackgroundColor="{x:StaticResource PrimaryAxisPink}">
+                <!--#region FIRST TRIP-->
+                <Frame
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Padding="0"
+                    BackgroundColor="{x:StaticResource PrimaryAxisPink}"
+                    CornerRadius="100"
+                    HeightRequest="70"
+                    HorizontalOptions="CenterAndExpand"
+                    IsClippedToBounds="True"
+                    VerticalOptions="Center"
+                    WidthRequest="70">
 
-                    <Frame Padding="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" CornerRadius="100" IsClippedToBounds="True"
-                     HeightRequest="50" WidthRequest="50" BackgroundColor="{x:StaticResource PrimaryWhite}">
+                    <Frame
+                        Padding="0"
+                        BackgroundColor="{x:StaticResource PrimaryWhite}"
+                        CornerRadius="100"
+                        HeightRequest="50"
+                        HorizontalOptions="CenterAndExpand"
+                        IsClippedToBounds="True"
+                        VerticalOptions="Center"
+                        WidthRequest="50">
 
-                        <Label Text="3" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" Scale="2"/>
+                        <Label
+                            HorizontalOptions="Center"
+                            Scale="2"
+                            Text="3"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
 
                     </Frame>
                 </Frame>
                 <Frame Grid.Row="2" Grid.Column="1">
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                            <Label FontSize="Subtitle"  HorizontalOptions="StartAndExpand" Text="Get your first trip" TextColor="black"/>
-                            <Label FontSize="Micro" HorizontalOptions="StartAndExpand" TextColor="Gray" Text="You are ready to do your first trip"/>
+                    <StackLayout
+                        HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        VerticalOptions="FillAndExpand">
+                        <StackLayout
+                            HorizontalOptions="FillAndExpand"
+                            Orientation="Vertical"
+                            VerticalOptions="FillAndExpand">
+                            <Label
+                                FontSize="Subtitle"
+                                HorizontalOptions="StartAndExpand"
+                                Text="Get your first trip"
+                                TextColor="black" />
+                            <Label
+                                FontSize="Micro"
+                                HorizontalOptions="StartAndExpand"
+                                Text="You are ready to do your first trip"
+                                TextColor="Gray" />
                         </StackLayout>
-                        <Image HeightRequest="05" Source="side" WidthRequest="15" />
+                        <Image
+                            HeightRequest="05"
+                            Source="side"
+                            WidthRequest="15" />
                     </StackLayout>
                 </Frame>
                 <!--#endregion-->
 
             </Grid>
-
-        </StackLayout>
+            <ImageButton
+                AbsoluteLayout.LayoutBounds=".95,.95,60,60"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Command="{Binding NavigateToComposeCommand}"
+                Source="ic_help" />
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

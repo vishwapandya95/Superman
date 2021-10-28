@@ -131,5 +131,23 @@ namespace SupermanDelivery.Resx {
                 return ResourceManager.GetString("SupermanWelcomeText", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please confirm things like Names, Numbers, Addresses are clearly visible while taking photo.
+        /// </summary>
+        public static string UploadDocIDTipText {
+            get {
+                return ResourceManager.GetString("UploadDocIDTipText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Owner Aadhar or Voter ID.
+        /// </summary>
+        public static string UploadDocOwnerIDText {
+            get {
+                return ResourceManager.GetString("UploadDocOwnerIDText", resourceCulture);
+            }
+        }
     }
 }

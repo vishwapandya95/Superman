@@ -6,6 +6,7 @@ namespace Superman.DataModel.Common
 {
    public class ConstantFile
    {
+        public static string UploadDocumentsText = "Owner Aadhar or Voter ID";
         public static string SupermanApiBaseUrl = "";
         public static string ConnectivityError = "Please check your internet connection.";
 

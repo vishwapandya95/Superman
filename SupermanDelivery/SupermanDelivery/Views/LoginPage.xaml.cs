@@ -17,5 +17,15 @@ namespace SupermanDelivery.Views
             InitializeComponent();
             this.BindingContext = new LoginViewModel(this);
         }
+
+        private void TermsConditionTapped(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new TermsConditionsPage());
+        }
+
+        private void PrivacyPolicyTapped(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new PrivacyPolicy());
+        }
     }
 }

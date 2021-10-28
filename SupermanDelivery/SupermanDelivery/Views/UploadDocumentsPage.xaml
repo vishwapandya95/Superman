@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SupermanDelivery.Views.UploadDocumentsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:resource="clr-namespace:SupermanDelivery.Resx">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <!--#region Completion Bar-->
+            <Grid
+                Margin="0,15,0,0"
+                ColumnSpacing="0"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Start">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3.33*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="3.33*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="3.33*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout
+                    Margin="5,0,0,0"
+                    Orientation="Horizontal"
+                    Spacing="0">
+                    <BoxView
+                        BackgroundColor="{StaticResource PrimaryDarkGrey}"
+                        CornerRadius="5"
+                        HeightRequest="8"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        WidthRequest="8" />
+                    <BoxView
+                        BackgroundColor="{StaticResource PrimaryDarkGrey}"
+                        HeightRequest="1"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="End" />
+                </StackLayout>
+                <StackLayout Grid.Column="1" Orientation="Vertical">
+                    <Label Text="ID" />
+                    <BoxView
+                        BackgroundColor="{StaticResource PrimaryDarkGrey}"
+                        CornerRadius="5"
+                        HeightRequest="8"
+                        HorizontalOptions="Center"
+                        WidthRequest="8" />
+                </StackLayout>
+
+                <BoxView
+                    Grid.Column="2"
+                    BackgroundColor="{StaticResource PrimaryDarkGrey}"
+                    HeightRequest="1"
+                    VerticalOptions="End" />
+                <StackLayout Grid.Column="3" Orientation="Vertical">
+                    <Label Text="RC" />
+                    <BoxView
+                        BackgroundColor="{StaticResource PrimaryDarkGrey}"
+                        CornerRadius="5"
+                        HeightRequest="8"
+                        HorizontalOptions="Center"
+                        WidthRequest="8" />
+                </StackLayout>
+
+                <BoxView
+                    Grid.Column="4"
+                    BackgroundColor="{StaticResource PrimaryDarkGrey}"
+                    HeightRequest="1"
+                    VerticalOptions="End" />
+                <StackLayout
+                    Grid.Column="5"
+                    Margin="2,0,0,0"
+                    Orientation="Vertical">
+                    <Label Text="DL" />
+                    <BoxView
+                        BackgroundColor="{StaticResource PrimaryDarkGrey}"
+                        CornerRadius="5"
+                        HeightRequest="8"
+                        HorizontalOptions="Start"
+                        WidthRequest="8" />
+                </StackLayout>
+            </Grid>
+            <!--#endregion-->
+            <Label
+                Margin="10,15,0,0"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                Text="{x:Static resource:AppResources.UploadDocOwnerIDText}"
+                TextColor="{StaticResource PrimaryDarkGrey}" />
+
+            <StackLayout HorizontalOptions="StartAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

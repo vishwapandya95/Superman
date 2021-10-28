@@ -141,4 +141,10 @@
   <data name="SupermanWelcomeText" xml:space="preserve">
     <value>सुपरमैन में आपका स्वागत है!</value>
   </data>
+  <data name="UploadDocIDTipText" xml:space="preserve">
+    <value>कृपया पुष्टि करें कि फोटो लेते समय नाम, नंबर, पते जैसी चीजें स्पष्ट रूप से दिखाई दे रही हैं</value>
+  </data>
+  <data name="UploadDocOwnerIDText" xml:space="preserve">
+    <value>मालिक का आधार या वोटर आईडी</value>
+  </data>
 </root>

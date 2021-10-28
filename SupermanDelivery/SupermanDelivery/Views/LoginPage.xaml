@@ -55,12 +55,20 @@
                                 <Span
                                     FontAttributes="Bold"
                                     Text="Terms and conditions"
-                                    TextColor="{x:StaticResource PrimaryAxisPink}" />
+                                    TextColor="{x:StaticResource PrimaryAxisPink}">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TermsConditionTapped" />
+                                    </Span.GestureRecognizers>
+                                </Span>
                                 <Span Text=" and " TextColor="{x:StaticResource PrimaryGrey}" />
                                 <Span
                                     FontAttributes="Bold"
                                     Text="Privacy Policy."
-                                    TextColor="{x:StaticResource PrimaryAxisPink}" />
+                                    TextColor="{x:StaticResource PrimaryAxisPink}">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="PrivacyPolicyTapped" />
+                                    </Span.GestureRecognizers>
+                                </Span>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
