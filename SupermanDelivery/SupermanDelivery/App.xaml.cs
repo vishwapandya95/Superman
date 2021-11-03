@@ -14,7 +14,8 @@ namespace SupermanDelivery
             InitializeComponent();
 
             // DependencyService.Register<MockDataStore>();
-            MainPage = new NavigationPage(new UploadDocumentsPage());
+            MainPage = new FlyoutPage1();
+            //MainPage = new NavigationPage(new UploadDocumentsPage());
              
         }
 
