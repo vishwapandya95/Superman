@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="SupermanDelivery.Views.UploadDocumentsPage"
+    x:Class="SupermanDelivery.Views.UploadDocumentsRCPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:resource="clr-namespace:SupermanDelivery.Resx">
@@ -24,14 +24,14 @@
                     Orientation="Horizontal"
                     Spacing="0">
                     <BoxView
-                        BackgroundColor="{StaticResource PrimaryDarkGrey}"
+                        BackgroundColor="{StaticResource PrimaryAxisPink}"
                         CornerRadius="5"
                         HeightRequest="8"
                         HorizontalOptions="Center"
                         VerticalOptions="End"
                         WidthRequest="8" />
                     <BoxView
-                        BackgroundColor="{StaticResource PrimaryDarkGrey}"
+                        BackgroundColor="{StaticResource PrimaryAxisPink}"
                         HeightRequest="1"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="End" />
@@ -39,7 +39,7 @@
                 <StackLayout Grid.Column="1" Orientation="Vertical">
                     <Label Text="ID" />
                     <BoxView
-                        BackgroundColor="{StaticResource PrimaryDarkGrey}"
+                        BackgroundColor="{StaticResource PrimaryAxisPink}"
                         CornerRadius="5"
                         HeightRequest="8"
                         HorizontalOptions="Center"
@@ -84,7 +84,7 @@
                 Margin="10,15,0,0"
                 FontAttributes="Bold"
                 FontSize="Medium"
-                Text="{x:Static resource:AppResources.UploadDocOwnerIDText}"
+                Text="{x:Static resource:AppResources.UploadVehicleRCText}"
                 TextColor="{StaticResource PrimaryDarkGrey}" />
 
             <StackLayout

@@ -61,6 +61,15 @@ namespace SupermanDelivery.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back Side.
+        /// </summary>
+        public static string BackSideText {
+            get {
+                return ResourceManager.GetString("BackSideText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to City.
         /// </summary>
         public static string CityText {
@@ -124,6 +133,24 @@ namespace SupermanDelivery.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Front Side.
+        /// </summary>
+        public static string FrontSideText {
+            get {
+                return ResourceManager.GetString("FrontSideText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note.
+        /// </summary>
+        public static string NoteText {
+            get {
+                return ResourceManager.GetString("NoteText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Welcome to Superman!.
         /// </summary>
         public static string SupermanWelcomeText {
@@ -147,6 +174,24 @@ namespace SupermanDelivery.Resx {
         public static string UploadDocOwnerIDText {
             get {
                 return ResourceManager.GetString("UploadDocOwnerIDText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Driving license.
+        /// </summary>
+        public static string UploadVehicleDrivingLicenseText {
+            get {
+                return ResourceManager.GetString("UploadVehicleDrivingLicenseText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vehicle&apos;s RC.
+        /// </summary>
+        public static string UploadVehicleRCText {
+            get {
+                return ResourceManager.GetString("UploadVehicleRCText", resourceCulture);
             }
         }
     }

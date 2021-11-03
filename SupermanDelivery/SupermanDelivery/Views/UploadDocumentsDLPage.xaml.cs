@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace SupermanDelivery.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class UploadDocumentsPage : ContentPage
+    public partial class UploadDocumentsDLPage : ContentPage
     {
-        public UploadDocumentsPage()
+        public UploadDocumentsDLPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new UploadDocumentsRCPage());
         }
     }
 }

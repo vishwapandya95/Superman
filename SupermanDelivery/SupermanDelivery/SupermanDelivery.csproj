@@ -36,6 +36,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>AppResources.hi.resx</DependentUpon>
     </Compile>
+    <Compile Update="Views\UploadDocumentsRCPage.xaml.cs">
+      <DependentUpon>UploadDocumentsRCPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resx\AppResources.gu.resx">
@@ -43,7 +46,7 @@
       <LastGenOutput>AppResources.gu.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resx\AppResources.hi.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.hi.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resx\AppResources.resx">
@@ -68,7 +71,13 @@
     <EmbeddedResource Update="Views\TermsConditionsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\UploadDocumentsDLPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\UploadDocumentsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\UploadDocumentsRCPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\UploadTrainingTripPage.xaml">

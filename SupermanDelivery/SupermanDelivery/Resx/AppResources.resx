@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackSideText" xml:space="preserve">
+    <value>Back Side</value>
+  </data>
   <data name="CityText" xml:space="preserve">
     <value>City</value>
   </data>
@@ -138,6 +141,12 @@
   <data name="DriverDetailVehicleType" xml:space="preserve">
     <value>Vehicle Type</value>
   </data>
+  <data name="FrontSideText" xml:space="preserve">
+    <value>Front Side</value>
+  </data>
+  <data name="NoteText" xml:space="preserve">
+    <value>Note</value>
+  </data>
   <data name="SupermanWelcomeText" xml:space="preserve">
     <value>Welcome to Superman!</value>
   </data>
@@ -146,5 +155,11 @@
   </data>
   <data name="UploadDocOwnerIDText" xml:space="preserve">
     <value>Owner Aadhar or Voter ID</value>
+  </data>
+  <data name="UploadVehicleDrivingLicenseText" xml:space="preserve">
+    <value>Driving license</value>
+  </data>
+  <data name="UploadVehicleRCText" xml:space="preserve">
+    <value>Vehicle's RC</value>
   </data>
 </root>

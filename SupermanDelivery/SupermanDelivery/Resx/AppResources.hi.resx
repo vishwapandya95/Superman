@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackSideText" xml:space="preserve">
+    <value>पीछे की ओर</value>
+  </data>
   <data name="CityText" xml:space="preserve">
     <value>शहर</value>
   </data>
@@ -138,6 +141,12 @@
   <data name="DriverDetailVehicleType" xml:space="preserve">
     <value>वाहन का प्रकार</value>
   </data>
+  <data name="FrontSideText" xml:space="preserve">
+    <value>सामने की ओर</value>
+  </data>
+  <data name="NoteText" xml:space="preserve">
+    <value>ध्यान दें</value>
+  </data>
   <data name="SupermanWelcomeText" xml:space="preserve">
     <value>सुपरमैन में आपका स्वागत है!</value>
   </data>
@@ -146,5 +155,11 @@
   </data>
   <data name="UploadDocOwnerIDText" xml:space="preserve">
     <value>मालिक का आधार या वोटर आईडी</value>
+  </data>
+  <data name="UploadVehicleDrivingLicenseText" xml:space="preserve">
+    <value>ड्राइविंग लाइसेंस</value>
+  </data>
+  <data name="UploadVehicleRCText" xml:space="preserve">
+    <value>वाहन की RC</value>
   </data>
 </root>
